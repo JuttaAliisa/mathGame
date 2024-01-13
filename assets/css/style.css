@@ -1,3 +1,19 @@
+/*Import for google fonts*/
+@import url('https: //fonts.googleapis.com/css2?family=Tektur:wght@400;500;600;700;800;900&display=swap');
+
+/*The wildacard selector to override browser default styles*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*General Styles*/
 body {
-    background-color: aqua;
+    color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'tektur', sans-serif;
+    background-color: #cccccc;
 }
