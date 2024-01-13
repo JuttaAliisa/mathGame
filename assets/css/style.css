@@ -24,3 +24,19 @@ header {
     height: 10%
     box-shadow: -1px 4px 17px 0px rgba(0, 0, 0, 1);
 }
+
+#choose-stage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.stage-button {
+    flex: 0 0 20%;
+    aspect-ratio: 1/1;
+    background-color: green;
+    text-align: center;
+    font-size: 15vw;
+    margin: 2%;
+}
