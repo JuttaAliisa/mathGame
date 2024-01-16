@@ -46,6 +46,13 @@ header p {
     margin: 2%;
 }
 
+.stage-button:active {
+    background-color: aqua;
+}
+.stage-button:hover {
+    background-color: ;
+}
+
 /*Footer*/
 footer {
     position: fixed;
