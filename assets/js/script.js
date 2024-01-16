@@ -35,13 +35,16 @@ function runGame() {
     updateScore();
 }
 
+
 function checkAnswer() {
             const userAnswer = parseInt(document.getElementById('answer').value, 10);
             const num1 = buttonValue;
             const num2 = parseInt(document.getElementById('question').innerText.split('x')[1], 10);
             const correctAnswer = num1 * num2;
 
-            if (userAnswer === correctAnswer) {
+            if( document.getElementById('answer').value === '' ){
+                alert('Answer can not be empty!');
+            }if (userAnswer === correctAnswer) {
                 document.getElementById('result').innerText = 'Correct! Well done.';
                 correctCount++;
             } else {
