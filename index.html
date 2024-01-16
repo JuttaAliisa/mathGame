@@ -36,7 +36,7 @@
         </div>
 
         <!--Game section-->
-        <div>
+        <div id="game-section">
             <p id="question"></p>
             <input type="text" id="answer" placeholder="Your Answer">
             <button data-type="submit">Submit Answer</button>
@@ -44,12 +44,10 @@
         </div>
 
         <!--Scores-->
-        <div>
+        <div id="score-section">
             <p id="score">0 (Correct) / 0 (Incorrect)</p>
+            <button onclick="resetScore()">Reset Score</button>
         </div>
-
-        <!--Reset scores-->
-        <button onclick="resetScore()">Reset Score</button>
 
     </main>
 
