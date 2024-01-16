@@ -44,7 +44,7 @@ function checkAnswer() {
 
             if( document.getElementById('answer').value === '' ){
                 alert('Answer can not be empty!');
-            }if (userAnswer === correctAnswer) {
+            } else if (userAnswer === correctAnswer) {
                 document.getElementById('result').innerText = 'Correct! Well done.';
                 correctCount++;
             } else {
