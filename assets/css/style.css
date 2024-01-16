@@ -36,6 +36,10 @@ header p {
     background-color: #F4A259
 }
 
+button {
+    font-family: 'tektur', sans-serif;
+}
+
 #choose-stage {
     display: flex;
     flex-wrap: wrap;
