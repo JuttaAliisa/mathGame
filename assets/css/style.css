@@ -15,7 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'tektur', sans-serif;
-    background-color: #cccccc;
+    background-color: #F4E285;
 }
 
 header {
@@ -31,7 +31,7 @@ header p {
 }
 
 #introduction {
-    marging: 5%;
+    margin: 5%;
     text-align: center;
     background-color: #F4A259
 }
@@ -40,24 +40,43 @@ header p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
+    margin: 5%;
+    background-color: #F4A259
 }
 
 .stage-button {
     flex: 0 0 20%;
     aspect-ratio: 1/1;
-    background-color: green;
+    background-color: #5B8E7D;
     text-align: center;
     font-size: 15vw;
     margin: 2%;
+    font-family: 'tektur', sans-serif;
 }
 
 .stage-button:active {
-    background-color: aqua;
+    background-color: #8CB369;
 }
 .stage-button:hover {
-    background-color: yellow;
+    background-color: #8CB369;
 }
+
+#game-section {
+    margin: 5%;
+    text-align: center;
+    background-color: #F4A259;
+    padding: 2%;
+}
+
+#submit-answer {
+    background-color: #8CB369;
+}
+
+#score-section {
+    
+}
+
+
 
 /*Footer*/
 footer {
