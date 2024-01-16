@@ -53,7 +53,7 @@ function checkAnswer() {
         };
 
 function updateScore() {
-    document.getElementById('score').innerText = `Score: ${correctCount} (Correct) / ${incorrectCount} (Incorrect)`;
+    document.getElementById('score').innerText = `${correctCount} (Correct) / ${incorrectCount} (Incorrect)`;
 }
 
 function resetScore() {
