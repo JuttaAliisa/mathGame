@@ -19,12 +19,12 @@ let buttonValue = 0;
 let correctCount = 0;
 let incorrectCount = 0;
 
-const allValues = document.querySelectorAll('.stage-button')
+const allValues = document.querySelectorAll('.stage-button');
 allValues.forEach(ab => {
     ab.addEventListener('click', (event) => {
-        buttonValue = event.target.value   
-     })
-})
+        buttonValue = event.target.value;   
+     });
+});
 
 function runGame() {
     const num1 = buttonValue;
@@ -52,8 +52,8 @@ function checkAnswer() {
                 incorrectCount++;
             }
 
-            runGame()
-        };
+            runGame();
+        }
 
 function updateScore() {
     document.getElementById('score').innerText = `${correctCount} (Correct) / ${incorrectCount} (Incorrect)`;
