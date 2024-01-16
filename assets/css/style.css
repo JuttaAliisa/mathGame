@@ -95,3 +95,26 @@ footer {
     box-shadow: 1px 1px 25px 11px rgba(0, 0, 0, 0.57);
     background-color: #8CB369;
 }
+
+/*Big screens*/
+@media only screen and (min-width: 683px) {
+    main {
+        max-width: 683px;
+        margin: auto;
+    }
+
+    header {
+        height: 62px;
+        font-size: 300%;
+    }
+
+    header p {
+        font-size: 100%;
+    }
+
+    .stage-button {
+        width: 120px;
+        height: 130px;
+        font-size: 600%;
+    }
+}
