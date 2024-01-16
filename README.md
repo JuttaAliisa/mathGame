@@ -1,8 +1,9 @@
 # Welcome - Multiplication Practice game
 
 This is my seconf independent project as a up and coming full stack developer, Studying towards my Diploma with Code Institute.
+It is inspired my daughter who keeps strugling with multiblications wits 7's and 8's.
 
-![Screenshot](assets/images/responsive.jpg)
+![Screenshot](assets/images/responsive.png)
 
 [View this game on Github Pages](https://github.com/JuttaAliisa/mathGame)
 
@@ -139,21 +140,18 @@ HTML and CSS and JavaScript were used for this website.
 - HTML
   - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjuttaaliisa.github.io%2FmathGame%2F)
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css)
-- Lighthouse
-  - Accessibility 100
-  - Best practises 100
-  - SEO 100
-  - performance 48/100 mainly because of bad image optimazation (next sprint agenda)
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjuttaaliisa.github.io%2FmathGame%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+- Lighthouse gave near perfect score
   
-  [Disgnostics](docs/testing/diagnostics.png)
+  ![Disgnostics](assets/images/performance.png)
 
 ## Manual testing
 
-To ensure that the site works, I tested forms, buttons and responsiveness manually with multiple devices and browsers:
+To ensure that the site works, I tested the game, buttons and responsiveness manually with multiple devices and browsers:
 
 - Lenovo Legion laptop
 - Iphone 13PRO
+- iPhone SE
 - Macbook pro 13"
 - iPad Pro 11"
 - Safari
@@ -162,12 +160,8 @@ No problems were found
   
 ## Fixed bugs
 
-- The only bug found during the project was "The element button must not appear as a descendant of the a element." This bug was fixed. The developer had no idea this was not valid HTML and the buttons were actually working before the fix.
-- Some Javascript was necessary to use to quick fix this and the fix is not perfect, but the page was styled using buttons and there was not enough time to rewrite the whole code aroun a-element, the fix is in place until further notice.
-
-![thebug](docs/testing/thebug.png)
-
-No unfixed bugs remain.
+- The only bug found during the project was that if the user left the answer field empty and submitted, they saw the alert for ampty field but the answer was still counted as incorrect. I tranferred the code for the aler inside the checkAnswer function and it fixed the problem.
+- I would like the table button schosen to stay "active" as long as the user is answering questions regarding the same stage. At the moment the stage.button:active applies only as long as no questions are answered. After the first question the normal color remains. I have not found and answer to this, but will keep looking. This would increase the usability.
 
 ## Deployment
 
@@ -176,22 +170,20 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 - In the GitHub repository, navigate to the Settings tab
 - From the source section drop-down menu, select the Master Branch
 - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
-- The live link can be found here - [LINK](https://juttaaliisa.github.io/Aliica/index.html)
+- The live link can be found here - [LINK](https://juttaaliisa.github.io/mathGame/)
 
 # Credits
 
 ## Content
 
 - The texts are produced by Jutta Helin
-- The header and footer design is inspired by the Code Institute walk through project "Love Running"
-- The icons in the footer were taken from Font Awesome
 - Instructions and inspiration (but no direct copy of the code) has been searched from <https://stackoverflow.com/> and <https://www.w3schools.com/> together with Code Institute tutorials from full stack development course.
 
 ## Media
 
-- Pictures are created by Ilmari "Aliica" Helin
 - Fonts from Google fonts
-- Youtube colours from [Youtube resources](https://www.youtube.com/howyoutubeworks/resources/brand-resources/?_gl=1*6uwtl9*_up*MQ..*_ga*MTYyNTE2NTY4My4xNzAxNjE3MTc2*_ga_M0180HEFCY*MTcwMTYxNzE3NS4xLjAuMTcwMTYxNzI3MC4wLjAuMA..#logos-icons-and-colors)
+- Colours from [Coolors.co](https://coolors.co/palette/8cb369-f4e285-f4a259-5b8e7d-bc4b51)
+    ![Colors](assets/images/dcolors.png)
 - Responsive picture in readme from <https://ui.dev/>
 
 ## Acknowledgements
@@ -200,3 +192,4 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 - My everloving husband for granting me the time to make this project and further my education
 - Code Institute for the opportunity
 - My fellow OCT 2023 group for mental and peer support
+- My daughter who is having trouble with multiplication tables
